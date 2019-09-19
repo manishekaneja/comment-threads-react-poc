@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Fullstack Assignment
+## Problem Statement 
+***To Build a Commenting System with following features***
+- User can make a Comment in this system.
+ - Ablity to comment on any available post.
+- Ability to Edit it's Comment, after being posted.
+## Major Tasks
+- To Keep a Record of a Comment
+- To Keep Record of replies to any Comment
+- To keep Record of User commenting on the Platform.
+### Features
+- Every User has ability to like or dislike any comment, and that doesn't require login ore register step.
+- Anyone can like or dislike any number or times.
+- Users are notified for most of the Actions.
+## Solution
+> To provide a solution to this problem. I have used follow majorly javascript technologies:
+- For Front-end
+- React JS
+- Material UI
+- Apollo Client
+- GraphQL
+> Basic Requirement to run this Solution on a System is Node JS, which includes npm, npx
+> (Node JS is required to download the packages from store and initiate the Project)
+# How to Run The Code
+> Clone the Repository or Download as zip
+>  ***This is only to run the Frontend***  
+### Perform the following instructions
+	cd webapp/
+##### To install Dependencies
+	npm install
+##### Or
+	yarn
+#### To Run Server
+	npm start
+#### Or
+	yarn start
+*Server Will Run on Port 3000 , make sure to keep it free.*
+## Explantation
 
-In the project directory, you can run:
+> This is a single Screen Application which includes a Header and Body Section
+> Header has only two major Functions ( To provide User with Login and Register Features )
+> Body Consist of All the Post/Comment, which are visible to every person but only a logged in Person can make changes in the System. *Excluding the like and dislike changes.*
+>Only a logged in user can reply to any Comment and edit a comment ( if posted by him only )
+> Security Level of users is kept minimal for prototype purpose
+### Code Overview
+> Frontend is build using ***create-react-app*** boiler plate and all the code is present in ***src*** .
+> Code is emphasised to use ***hooks*** of ***React JS*** in a proper manner.
+> This Directory also consist of 2 Sub-Directories *( API; Components;)*
+>  ***Api*** folder consist of ***Apollo Client*** and ***GraphQL Queries***
+>  ***Components*** folder consist of All The Componets made in this application *(That is for Login, Comments,etc.)*
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##
+*By default appliction will fetch from localhot:4000*
